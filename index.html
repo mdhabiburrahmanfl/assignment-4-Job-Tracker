@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title> Application Tracker</title>
+    <title>Job Application Tracker</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <style>
         * {
@@ -95,6 +95,24 @@
             <button class="tab px-4 py-1.5 text-sm font-medium rounded-md" data-tab="rejected">
                 Rejected
             </button>
+
+        </div>
+
+        <!--  no jobs state -->
+
+        <div id="emptyState" class="hidden text-center    py-20">
+
+            <div class="flex justify-center mb-3">
+                <img src="./images/jobs.png">
+            </div>
+
+            <h3 class="text-xl font-semibold">
+                No jobs available
+            </h3>
+
+            <p class="text-gray-500">
+                Check back soon for new job opportunities
+            </p>
 
         </div>
 
@@ -449,22 +467,7 @@
             </div>
 
         </div>
-        <!--  no jobs state -->
-        <div id="emptyState" class="hidden text-center    py-20">
 
-            <div class="flex justify-center mb-3">
-                <img src="./images/jobs.png">
-            </div>
-
-            <h3 class="text-xl font-semibold">
-                No jobs available
-            </h3>
-
-            <p class="text-gray-500">
-                Check back soon for new job opportunities
-            </p>
-
-        </div>
 
 
 
