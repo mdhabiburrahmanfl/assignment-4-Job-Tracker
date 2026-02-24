@@ -1,7 +1,8 @@
+// Track currently selected (all )
 let currentTab = "all"
 
 
-
+// Update dashboard numbers based on job 
 function updateCounts() {
 
     const jobs = document.querySelectorAll(".job")
@@ -33,6 +34,7 @@ function updateCounts() {
 
 
 
+// Show jobs depending on the selected tab
 function filterJobs() {
 
     const jobs = document.querySelectorAll(".job")
@@ -80,6 +82,7 @@ function filterJobs() {
 
     }
 
+    // Show no jobs match the filter
     if (visible === 0) {
 
         emptyState.classList.remove("hidden")
@@ -96,6 +99,7 @@ function filterJobs() {
 
 
 
+// Handle tab switching UI
 function setupTabs() {
 
     const tabs = document.querySelectorAll(".tab")
@@ -120,6 +124,7 @@ function setupTabs() {
 
 
 
+// Handle Interview   button actions
 function handleButtons() {
 
     document.addEventListener("click", function (e) {
@@ -146,6 +151,7 @@ function handleButtons() {
         }
 
 
+        //Handle Rejected  button actions
 
         if (rejectedBtn) {
 
@@ -163,6 +169,7 @@ function handleButtons() {
         }
 
 
+        //Handle Delete button actions
 
         if (deleteBtn) {
 
@@ -181,6 +188,7 @@ function handleButtons() {
 
 
 
+// Application
 function initApp() {
 
     setupTabs()
@@ -189,7 +197,5 @@ function initApp() {
     filterJobs()
 
 }
-
-
 
 initApp()
